@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>A service design history for Data Products Discovery.</p>
+
+  <hr>
+
+      <h2 class="govuk-heading-m">
+        Design History
+      </h2>
+
+      <p>Find out what the data product discovery team is doing and how to get involved</p>
+
+
+      <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <hr>
+        <p class="govuk-body"><a href="#" class="govuk-link">Govgraph</a></p>
+          <p> Beta, conducted first user research   <p>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <hr>
+        <p class="govuk-body"><a href="#" class="govuk-link">Content Data App</a></p>
+          <p> Beta, conducted first user research   <p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- first two coloumn ends here -->
+
+
+      <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <hr>
+        <p class="govuk-body"><a href="#" class="govuk-link">Meta data</a></p>
+        <p> Beta, conducted first user research   <p>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <hr>
+        <p class="govuk-body"><a href="#" class="govuk-link">Data Products Landing Page</a></p>
+          <p> Beta, conducted first user research <p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- second two coloumn ends here -->
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related Links
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                About the service
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Meet the team
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
