@@ -1,42 +1,100 @@
-
 {% extends "layout.html" %}
 
 {% block pageTitle %}
   Home – GOV.UK Prototype Kit
 {% endblock %}
 
+
+
 {% block content %}
+<html lang="en" class="govuk-template">
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Design History
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-      A service for cross-gov colleagues to access a range of data for decision-making.
-      </p>
+  <body>
+  <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main" style="padding-top: 0px;">
+
+      <div style="background-color: #1d70b8; padding:50px">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+
+            <h1 class="govuk-heading-xl" style="color: #ffffff;">
+              {% if serviceName %} {{ serviceName }} {% endif %}
+            </h1>
+            <p style="color: #ffffff;">A service design history for Data Products Discovery.</p>
+          </div>
+        </div>
+      </div>
 
 
 
-      <h2 class="govuk-heading-m">About this page</h2>
+      <div class="govuk-grid-row" style="padding:50px;">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">
+            Design History
+          </h2>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
+          <p>Find out what the data product discovery team is doing and how to get involved</p>
 
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
 
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <hr>
+            <p class="govuk-body"><a href="/govgraph-index" class="govuk-link">GovGraph</a></p>
+              <p> Beta, conducted first user research   <p>
+          </div>
 
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a href="/docs/tutorials-and-examples">Tutorials and templates</a>
-        </li>
-        <li>
-          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>
-        </li>
-      </ul>
+        <div class="govuk-grid-column-one-half">
+          <hr>
+          <p class="govuk-body"><a href="#" class="govuk-link">Content Data App</a></p>
+            <p> Beta, conducted first user research   <p>
+        </div>
+      </div>
+
+
+<!-- first two coloumn ends here -->
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+          <hr>
+          <p class="govuk-body"><a href="/metadata-index" class="govuk-link">Metadata</a></p>
+          <p> Beta, conducted first user research   <p>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <hr>
+          <p class="govuk-body"><a href="#" class="govuk-link">Data Products Landing Page</a></p>
+            <p> Beta, conducted first user research <p>
+        </div>
+        </div>
+      </div>
+
+
+<!-- second two coloumn ends here -->
+  <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related Links
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="/about-the-service">
+                About the service
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Meet the team
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Prototypes
+            </li>
+          </ul>
+        </nav>
+      </aside>
     </div>
-  </div>
-
+  </main>
+  </body>
 {% endblock %}

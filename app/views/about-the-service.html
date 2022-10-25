@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+About – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+	{{ govukBreadcrumbs({
+	  items: [
+	    {
+	      text: "GOV.UK Prototype Kit",
+	      href: "/docs"
+	    }
+	  ]
+	}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">About the service</h1>
+
+
+      <h2 class="govuk-heading-m">The problem statement</h2>
+
+	      <p>We already know that colleagues within GDS and across government have numerous blockers to accessing and making decisions with data. These issues include understanding what data is available, requesting and getting access to systems with data, and furthermore digesting and understanding the information to make decisions with it.</p>
+
+				<p>These issues have led to a range of data visualisation and presentation tools and apps across government, with some being created by the user as a tactical solution. The ‘entire’ problem, or need, have not yet been met.</p>
+
+				<p>We need to understand what users need, and what they are trying to do in their day to day jobs to be able to provide the correct data in a format that it accessible. Without this information, we will not be able to solve these problems for users.</p>
+
+
+      <h2 class="govuk-heading-m">What we've learnt so far</h2>
+
+				<p>You can find more information about what we have learnt by viewing our <a href="/index"> Design history.</a></p>
+
+			<h3 class="govuk-heading-s">Discovery</h3>
+				<p>1. We revisited what understanding about our users and the organisation that we already have. This led us to identify several gaps in our understanding.</p>
+				<p>2. We reviewed the current product portfolio, and whether these tools are helpful to users or not. We discovered that users have developed and have accessed to a lot of different software and analytics tools, and can use several of these tools daily. We reviewed the front end design and back end infrastrcture of these different tools.</p>
+				<p>3. We refined our problem statement and where we want to go. We needed our vision for MVP to be realistic, and not try to ‘do everything’ by the end of Alpha.</p>
+
+
+
+      <h2 class="govuk-heading-m">What we're up to now</h2>
+				<p>You can find more information about what we are up to by viewing our <a href="/index">Trello board.</a></p>
+
+			<h3 class="govuk-heading-s">Alpha</h3>
+				<p>1. Phase 1 of our user research work stream aims to identify users’ jobs to do and their accessibility needs. This foundational user understanding is required so we can design based on the users’ goals.</p>
+				<p>2. We do not have all the insight we need to design an end to end service, so we have started experimental design sprints to create smaller components and features for our service.</p>
+				<p>3. We’ve made a plan for what the back end infrustrature and architecture should look like, remaining open for future features and improvements.</p>
+				<p>4. We’re understanding how our work fits in to the ‘bigger picture’ and what our product could look like further in to the future.</p>
+
+
+
+      <h2 class="govuk-heading-m">Get in touch</h2>
+
+      <p>You can get in touch with us by emailing <a href="mailto:data-products-research@digital.cabinet-office.gov.uk">data-products-research@digital.cabinet-office.gov.uk</a></p>
+
+    </div>
+
+		<div class="govuk-grid-column-one-third">
+
+	      <aside class="app-related-items" role="complementary">
+	        <h2 class="govuk-heading-m" id="subsection-title">
+	          Related Links
+	        </h2>
+	        <nav role="navigation" aria-labelledby="subsection-title">
+	          <ul class="govuk-list govuk-!-font-size-16">
+	            <li>
+	              <a href="/index">
+	                Home
+	              </a>
+	            </li>
+	            <li>
+	              <a href="#">
+	                Meet the team
+	              </a>
+	            </li>
+	            <li>
+	              <a href="#">
+	                Prototypes
+	            </li>
+	          </ul>
+	        </nav>
+	      </aside>
+	    </div>
+
+
+  </div>
+
+
+
+{% endblock %}
