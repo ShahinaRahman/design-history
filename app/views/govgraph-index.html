@@ -6,11 +6,9 @@
 
 
 
-{% block content %}
-<html lang="en" class="govuk-template">
+{% block beforeContent %}
 
-  <body>
-      <div style="background-color: #1d70b8; padding:50px">
+      <div style="background-color: #1d70b8; padding:20px">
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-full">
 
@@ -22,8 +20,9 @@
         </div>
       </div>
 
+{% endblock %}
 
-
+{% block content %}
       <div class="govuk-grid-row" style="padding:50px;">
         <div class="govuk-grid-column-two-thirds">
             <div class="govuk-grid-row">
@@ -73,5 +72,5 @@
         </nav>
       </aside>
     </div>
-  </body>
+
 {% endblock %}
