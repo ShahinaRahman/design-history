@@ -5,11 +5,7 @@
 {% endblock %}
 
 
-
-{% block content %}
-<html lang="en" class="govuk-template">
-
-  <body>
+{% block beforeContent %}
       <div style="background-color: #1d70b8; padding:50px">
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-full">
@@ -21,15 +17,15 @@
           </div>
         </div>
       </div>
+{% endblock %}
 
-
-
+{% block content %}
       <div class="govuk-grid-row" style="padding:50px;">
         <div class="govuk-grid-column-two-thirds">
             <div class="govuk-grid-row">
 
-            <p class="govuk-body"><a href="#" class="govuk-link">Post 1</a></p>
-              <p> Beta, conducted first user research <p>
+            <p class="govuk-body"><a href="posts/content-data-app/custom-date-ranges.html"" class="govuk-link">Making date ranges more accessible</a></p>
+              <p> The limitations of the date range filter and how we planned to address the user pain point. <p>
 
 
           <hr>
@@ -37,9 +33,6 @@
             <p> Beta, conducted first user research   <p>
         </div>
       </div>
-
-
-<!-- first two coloumn ends here -->
 
 
   <div class="govuk-grid-column-one-third">
@@ -51,7 +44,7 @@
         <nav role="navigation" aria-labelledby="subsection-title">
           <ul class="govuk-list govuk-!-font-size-16">
             <li>
-              <a href="#">
+              <a href="/index">
                 Home
               </a>
             </li>
@@ -73,5 +66,5 @@
         </nav>
       </aside>
     </div>
-  </body>
+
 {% endblock %}
