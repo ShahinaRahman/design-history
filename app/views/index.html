@@ -6,11 +6,6 @@
 
 
 
-{% block content %}
-<html lang="en" class="govuk-template">
-
-  <body>
-  <main>
 {% block beforeContent %}
       <div style="background-color: #1d70b8; padding:50px">
         <div class="govuk-grid-row">
@@ -23,8 +18,9 @@
           </div>
         </div>
       </div>
-{% endblock %} 
+{% endblock %}
 
+{% block content %}
 
       <div class="govuk-grid-row" style="padding:50px;">
         <div class="govuk-grid-column-two-thirds">
@@ -44,7 +40,7 @@
 
         <div class="govuk-grid-column-one-half">
           <hr>
-          <p class="govuk-body"><a href="#" class="govuk-link">Content Data App</a></p>
+          <p class="govuk-body"><a href="/content-data-app-index" class="govuk-link">Content Data App</a></p>
             <p> Beta, conducted first user research   <p>
         </div>
       </div>
@@ -92,6 +88,4 @@
           </nav>
         </aside>
       </div>
-  </main>
-  </body>
 {% endblock %}
