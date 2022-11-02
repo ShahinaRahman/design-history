@@ -5,87 +5,63 @@
 {% endblock %}
 
 
-
 {% block beforeContent %}
-      <div style="background-color: #1d70b8; padding:50px">
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-full">
+    <div style="background-color: #1d70b8; padding:50px">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
 
-            <h1 class="govuk-heading-xl" style="color: #ffffff;">
-              {% if serviceName %} {{ serviceName }} {% endif %}
-            </h1>
-            <p style="color: #ffffff;">A service design history for Data Products Discovery.</p>
-          </div>
+          <h1 class="govuk-heading-xl" style="color: #ffffff;">
+            {% if serviceName %} {{ serviceName }} {% endif %}
+          </h1>
+          <p style="color: #ffffff;">A service design history for the Data Products Discovery team.</p>
         </div>
       </div>
+    </div>
 {% endblock %}
 
 {% block content %}
-
-      <div class="govuk-grid-row" style="padding:50px;">
-        <div class="govuk-grid-column-two-thirds">
-          <h2 class="govuk-heading-m">
-            Design History
-          </h2>
-
-          <p>Find out what the data product discovery team is doing and how to get involved</p>
-
-
+    <div class="govuk-grid-row" style="padding:0px 20px 20px 20px;">
+      <div class="govuk-grid-column-two-thirds">
         <div class="govuk-grid-row">
-          <div class="govuk-grid-column-one-half">
-            <hr>
-            <p class="govuk-body"><a href="/govgraph-index" class="govuk-link">GovGraph</a></p>
-              <p> Beta, conducted first user research   <p>
-          </div>
 
-        <div class="govuk-grid-column-one-half">
+            <p>Find out what the data product discovery team is doing and how to get involved</p>
+            <hr>
+            <p class="govuk-body"><a href="posts/content-data-app/custom-date-ranges.html"" class="govuk-link">Making date ranges more accessible</a></p>
+            <p> The limitations of the date range filter and how we planned to address the user pain point. <p>
+
+
           <hr>
-          <p class="govuk-body"><a href="/content-data-app-index" class="govuk-link">Content Data App</a></p>
+          <p class="govuk-body"><a href="posts/content-data-app/custom-date-ranges.html" class="govuk-link">Post 2</a></p>
             <p> Beta, conducted first user research   <p>
         </div>
       </div>
 
 
+  <div class="govuk-grid-column-one-third">
 
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-half">
-          <hr>
-          <p class="govuk-body"><a href="/metadata-index" class="govuk-link">Metadata</a></p>
-          <p> Beta, conducted first user research   <p>
-        </div>
-        <div class="govuk-grid-column-one-half">
-          <hr>
-          <p class="govuk-body"><a href="#" class="govuk-link">Data Products Landing Page</a></p>
-            <p> Beta, conducted first user research <p>
-        </div>
-        </div>
-      </div>
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related Links
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="/about-the-service">
+                About the service
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Meet the team
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Prototypes
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
 
-
-      <div class="govuk-grid-column-one-third">
-
-        <aside class="app-related-items" role="complementary">
-          <h2 class="govuk-heading-m" id="subsection-title">
-            Related Links
-          </h2>
-          <nav role="navigation" aria-labelledby="subsection-title">
-            <ul class="govuk-list govuk-!-font-size-16">
-              <li>
-                <a href="/about-the-service">
-                  About the service
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Meet the team
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Prototypes
-              </li>
-            </ul>
-          </nav>
-        </aside>
-      </div>
 {% endblock %}
